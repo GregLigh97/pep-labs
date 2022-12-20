@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 /**
  * If we want to make programs that "do something", we're going to need to create instructions that change
@@ -13,17 +14,44 @@ public class Comparators {
      * @param b the second number to be compared.
      * @return true if a is equal to b, false otherwise.
      */
+
+ 
+
     public boolean isEqual(int a, int b){
-        return false;
+        boolean c = (a==b);
+        return true;
     }
 
+    public boolean isEqual2(int a, int b){
+        boolean c = (a!=b);
+        return false;
+    }
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than b, false otherwise.
      */
+    
+
     public boolean greaterThan(int a, int b){
+        boolean c = (a > b);
         return false;
+    } 
+     int a = 1;
+     int b = 2;
+    public boolean greaterThan2(int a, int b){
+        boolean c = (a < b);
+        return false;
+    }
+    public boolean greaterThan3(int a, int b){
+        boolean c = (a == b);
+        return false;
+    }
+    public boolean lessThanTest1(){
+        int a = 1;
+        int b = 2;
+        boolean c = (a < b);
+        return true;
     }
     /**
      * @param a the first number to be compared.
