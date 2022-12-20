@@ -6,7 +6,7 @@ public class HelloWorld<o> {
      * You can use the test results to check for differences.
      * @return "Hello, world!"
      */
-    public String World(){
+    public String sayHello(){
         return "Hello, world!";
     }
 }
