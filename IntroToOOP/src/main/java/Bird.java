@@ -1,3 +1,4 @@
+import javax.lang.model.util.ElementScanner6;
 
 /**
  * 
@@ -46,15 +47,9 @@ public class Bird {
      */
 
      public String sound(){
-        if (ageMonths == 0);
+        if (ageMonths < 3)
         return "Tweet";
-     }        
-    public String sound1(){
-        if (ageMonths == 4);
-        return "Chirp";
-    }
-    public String sound3(){
-        if (ageMonths == 3);
+        else
         return "Chirp";
 }
 }
