@@ -10,7 +10,16 @@ public class Add {
      * @param b second number to be added.
      * @return the sum of a and b.
      */
+    
+   
     public int addNumbers(int a, int b){
-        return 0;
+    int sum = a +  b;
+    return sum;
     }
+    public int addNumbers2(int a, int b){
+    int c = 3;
+    int d = 4;
+    int sum = c + d;
+    return sum;
+}
 }
