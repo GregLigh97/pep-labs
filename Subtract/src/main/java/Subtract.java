@@ -14,7 +14,8 @@ public class Subtract<a> {
      * @param b some decimal number
      * @return a minus b
      */
-    public double sub( a ,  b){
-        return
+    public double sub( double a,  double b){
+        return a - b;
     }
-}    
+}
+    
