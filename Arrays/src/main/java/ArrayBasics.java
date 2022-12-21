@@ -14,14 +14,27 @@ public class ArrayBasics {
     /**
      * @param arr the array we're getting data from.
      * @return 
+     * @return 
      * @return the length of arr.
      */
-    public int getLengthOfArray(int[] arr, int n, int val){
-      int[] input = {0,1,2,3,4};
-      if (Array = 5);
-      return 5;
+   
+      
+     
+      public static int main(String[] args) {
+        int[] newArr = new int[5];
+        newArr[0] = 0;
+        newArr[1] = 1;
+        newArr[2] = 2;
+        newArr[3] = 3;
+        newArr[4] = 4;
+
+        int[] nums = {0,1,2,3,4};
+        int x = [3];
+        return 5;
+      }
+      
     
-    }
+
 
 
 
