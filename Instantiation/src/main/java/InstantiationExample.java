@@ -1,3 +1,6 @@
+import javax.lang.model.util.ElementScanner6;
+
+import javafx.scene.shape.Circle;
 
 public class InstantiationExample {
     /**
@@ -14,10 +17,12 @@ public class InstantiationExample {
      *      return reference;
      *
      * Note: Null is a special type which represents the absence of an object.
+     * @param instantiateANewObject 
      *
      * @return any object.
      */
-    public Object instantiateANewObject(){
-        return null;
-    }
+    public Object instantiateANewObject(InstantiationExample instantiateANewObject){
+       Class schooClass = 
+        return new Object
+    }  
 }
