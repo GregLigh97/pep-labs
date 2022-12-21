@@ -1,4 +1,24 @@
+import java.lang.reflect.Type;
 
-public class instantiateANewObject {
+import javax.naming.Reference;
+
+import kotlin.TypeCastException;
+
+public class instantiateANewObject{
+ Type Reference = new Type(); 
+    return Reference;   
+ };
+
+ }; { 
+;
+ } 
+    
+{
+
+{
+    
+};
+
+
 
 }
