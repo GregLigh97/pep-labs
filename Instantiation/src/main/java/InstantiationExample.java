@@ -1,5 +1,6 @@
 import java.lang.reflect.Type;
 
+import javax.lang.model.type.ReferenceType;
 import javax.lang.model.util.ElementScanner6;
 
 import javafx.scene.shape.Circle;
@@ -23,11 +24,10 @@ public class InstantiationExample {
      *
      * @return any object.
      */
-    public Object instantiateANewObject ){
-     Type reference = new Type();
-     return reference;
-        
-     };
+    public static void main(String[] args) {
+        Circle c1 = new Circle();
+        return 
+    }
         
         
      
