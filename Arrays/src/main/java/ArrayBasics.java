@@ -20,16 +20,8 @@ public class ArrayBasics {
    
       
      
-      public static int main(String[] args) {
-        int[] newArr = new int[5];
-        newArr[0] = 0;
-        newArr[1] = 1;
-        newArr[2] = 2;
-        newArr[3] = 3;
-        newArr[4] = 4;
-
-        int[] nums = {0,1,2,3,4};
-        int x = [3];
+      public int getLenghtOfArray(int[] arr, int n, int val){
+        int[] input = {0,1,2,3,4};
         return 5;
       }
       
