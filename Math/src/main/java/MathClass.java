@@ -19,8 +19,8 @@ public class MathClass {
      *
      * @return return a^b using the pow() method of the Math class.
      */
-    public double mathPow(double a, double b){
-        mathPow(2, 2);
-        return 4;
+    public double math.MathClass(double a, double b){
+        
     }
+    
 }
