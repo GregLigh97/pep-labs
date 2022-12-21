@@ -1,3 +1,5 @@
+import java.lang.reflect.Type;
+
 import javax.lang.model.util.ElementScanner6;
 
 import javafx.scene.shape.Circle;
@@ -22,7 +24,10 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject ){
-     student name = new students();
+     Type reference = new Type();
+     return reference;
+        
+     };
         
         
      
