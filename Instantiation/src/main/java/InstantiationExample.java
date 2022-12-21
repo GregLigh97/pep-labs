@@ -22,7 +22,7 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(InstantiationExample instantiateANewObject){
-       Class schooClass = 
-        return new Object
+        return instantiateANewObject;
+     
     }  
 }
