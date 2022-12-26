@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 
 /**
  * An array is a group of some predefined number of elements.
@@ -12,11 +13,20 @@
 public class ArrayBasics {
     /**
      * @param arr the array we're getting data from.
+     * @return 
+     * @return 
      * @return the length of arr.
      */
-    public int getLengthOfArray(int[] arr){
-        return 0;
-    }
+   
+      
+     
+      public int getLenghtOfArray(int[] arr, int n, int val){
+        int[] input = {0,1,2,3,4};
+        return 5;
+      }
+      
+    
+
 
 
 
