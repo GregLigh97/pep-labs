@@ -20,10 +20,10 @@ public class ArrayBasics {
    
       
      
-      public int getLenghtOfArray(int[] arr, int n, int val ){
-        int array = arr.length;
+      public int getLengthOfArray(int[] arr){
+        
 
-        return array;
+        return arr.length;
       }
       
     
