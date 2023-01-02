@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class HardcodedLogin {
     /**
@@ -15,6 +16,12 @@ public class HardcodedLogin {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
-        return false;
+        if(username.equals("admin") && (password.equals("qwerty"))){
+            return true;
+        }
+            return false;
     }
+    }
+        
+       
 }
