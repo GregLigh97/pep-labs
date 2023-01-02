@@ -38,9 +38,9 @@ public class WhileLoop {
 
 //        code here
         while(i<end){
-        i=i+i;
-        sum=sum+1;
+        sum = sum + i;
+        i = i + 1;
 
-    }return (i);}     
+    }return sum;}     
 }
 
