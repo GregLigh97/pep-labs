@@ -1,1 +1,1 @@
-Select * From Table_Song;
+Select * From song;
