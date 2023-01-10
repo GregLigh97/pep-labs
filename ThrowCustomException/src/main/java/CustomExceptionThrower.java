@@ -16,7 +16,7 @@ public class CustomExceptionThrower {
         try {
             throwCustomException();
         } 
-        catch (Exception e) {
+        catch (CustomException ex) {
             
         }
         
