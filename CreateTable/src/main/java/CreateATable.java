@@ -69,6 +69,10 @@ public class CreateATable {
             Connection connection = ConnectionUtil.getConnection();
             Statement s = connection.createStatement();
             s.executeUpdate(sql);
+
+            String sq11 = "Create Table song(title varchar(100), artist varchar(100))";
+            s.executeUpdate(sq11);
+
         } catch (SQLException e) {
             System.out.println("problem1: " + e.getMessage() + '\n');
         }
