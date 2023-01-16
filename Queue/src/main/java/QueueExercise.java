@@ -30,7 +30,7 @@ public class QueueExercise {
      * implements the Queue interface, such as ArrayDeque. Deques contain all the methods required for both Queue and
      * Stack behavior.
      */
-    public Queue<> createQueue(){
+    public Queue<Integer> createQueue(){
         Queue<Integer> queue = new LinkedList<>();
         queue.add(1);
         return queue;
