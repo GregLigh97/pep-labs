@@ -2,6 +2,8 @@
  * TODO: switch to deque
  */
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
@@ -28,8 +30,10 @@ public class QueueExercise {
      * implements the Queue interface, such as ArrayDeque. Deques contain all the methods required for both Queue and
      * Stack behavior.
      */
-    public Queue<String> createQueue(){
-        return null;
+    public Queue<> createQueue(){
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(1);
+        return queue;
     }
 
     /**
