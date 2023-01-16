@@ -94,7 +94,7 @@ public class MapExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void overwriteValue(Map<Integer, String> map, int key, String value){
-        map.Update(key, value);
+        map.replace(key, value);
 
     }
 }
