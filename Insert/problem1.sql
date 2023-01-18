@@ -1,1 +1,1 @@
-INSERT INTO song (song_name)VALUES('Beatles');
+INSERT INTO song VALUES();
