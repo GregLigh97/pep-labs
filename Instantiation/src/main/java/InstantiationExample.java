@@ -24,9 +24,9 @@ public class InstantiationExample {
      *
      * @return any object.
      */
-    public static void main(String[] args) {
-        Circle c1 = new Circle();
-        return 
+    public Object instantiateANewObject() {
+        String myObject = new String();
+        return myObject;
     }
         
         
