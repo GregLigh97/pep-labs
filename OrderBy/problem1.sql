@@ -1,0 +1,1 @@
+SELECT * FROM character Order By last_name, first_name ASC;
