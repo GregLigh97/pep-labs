@@ -22,9 +22,7 @@ public class Runner {
      * @param in the String value you should change global_var to in.
      */
     public void changeClassVar(String in){
-    static void global_var(String in);
-
-    global_var = in;
-
+    ClassVar.myStaticVaiable = in;
+    
     }
 }
