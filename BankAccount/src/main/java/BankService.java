@@ -41,9 +41,6 @@ public class BankService {
      * @return the user's balance.
      */
     public double getBalance(){
-        if (this.balance>=700){
-
-        }
         return this.balance;
     }
 }
