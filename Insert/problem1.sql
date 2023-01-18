@@ -1,1 +1,1 @@
-INSERT INTO song (Let it be, Hotel California, Kashmir, Pop)VALUES('Beatles', 'Eagles', 'Led Zeppelin', 'Beatles');
+INSERT INTO song (song_name)VALUES('Beatles');
