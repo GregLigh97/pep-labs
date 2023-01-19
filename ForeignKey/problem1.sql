@@ -1,7 +1,1 @@
-CREATE TABLE post (
-Id int NOT NULL
-post int NOT NULL
-user_fk int
-post VARCHAR (255)
-FOREIGN KEY (user_fk) REFERENCES user(Id)
-)
+CREATE TABLE post (id SERIAL PRIMARY KEY,post VARCHAR(255),user_fk int REFERENCES post(id));
