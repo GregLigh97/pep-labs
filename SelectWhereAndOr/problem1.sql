@@ -1,2 +1,2 @@
 SELECT * FROM employee 
-Where  'STEVE' AND salary >  75000;
+Where first_name = 'Steve' AND salary >  75000;

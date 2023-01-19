@@ -1,2 +1,2 @@
 SELECT * FROM employee 
-Where salary > 50,000 AND NOT IN'steve'
+Where salary > 50000 AND first_name NOT IN ('Steve');
