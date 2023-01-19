@@ -1,7 +1,10 @@
 
 import java.util.List;
 
+import javax.lang.model.util.ElementScanner6;
+
 import com.fasterxml.jackson.annotation.JacksonInject.Value;
+import com.fasterxml.jackson.databind.introspect.TypeResolutionContext.Empty;
 
 public class MaxMinusMin {
     /**
@@ -12,7 +15,11 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-        List.MaxMinusMin(Integer);
-        return Integer;
-    }
+       if(nums.isEmpty()){
+        return 0;
+       }
+       int Max = nums.get(0);
+       int min = nums.get(0);
+    else nums.get(0);
+    
 }
