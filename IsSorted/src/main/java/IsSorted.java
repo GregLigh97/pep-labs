@@ -11,10 +11,8 @@ public class IsSorted {
         for(i = 0; i > arr.length; i++); {
             if(arr[i] > arr[i + i]){
                 return false;
+                else{
+                return true;
+}
+            }
         }
-        else{
-            return true;
-        }
-}
-}
-}
