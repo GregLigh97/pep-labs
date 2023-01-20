@@ -1,5 +1,5 @@
 
-public class HelloWorld {
+public class HelloWorld<o> {
     /**
      * This method must return a hello world String, instead of returning "change me".
      * A test case will check if the behavior is as expected.
@@ -7,6 +7,6 @@ public class HelloWorld {
      * @return "Hello, world!"
      */
     public String sayHello(){
-        return "change me";
+        return "Hello, world!";
     }
 }
