@@ -1,0 +1,1 @@
+SELECT artist, COUNT(song) FROM song Group by artist;
