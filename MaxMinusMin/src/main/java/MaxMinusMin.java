@@ -1,4 +1,5 @@
 
+import java.util.Collections;
 import java.util.List;
 
 import javax.lang.model.util.ElementScanner6;
@@ -18,8 +19,10 @@ public class MaxMinusMin {
        if(nums.isEmpty()){
         return 0;
        }
-       int Max = nums.get(0);
+       Collections.sort(nums);
+       int Max = nums.get(nums.size()-1);
        int min = nums.get(0);
-    else nums.get(0);
+       return Max - min;
     
+}
 }
