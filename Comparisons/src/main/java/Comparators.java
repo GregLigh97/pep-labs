@@ -18,14 +18,22 @@ public class Comparators {
  
 
     public boolean isEqual(int a, int b){
-        boolean c = (a==b);
+        if (a==b) {
         return true;
-    }
-
+         }
+        else{
+            return false;
+        }
+     }
+      
     public boolean isEqual2(int a, int b){
-        boolean c = (a!=b);
-        return false;
-    }
+        if(a == b){
+            return true;
+            }
+            else {
+                return false;
+            }
+        } 
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
@@ -34,49 +42,78 @@ public class Comparators {
     
 
     public boolean greaterThan(int a, int b){
-        boolean c = (a > b);
-        return false;
-    } 
-     int a = 1;
-     int b = 2;
+        if (a > b){
+        return true;
+         } 
+         else {
+         return false;
+         }
+    }
+  
     public boolean greaterThan2(int a, int b){
-        boolean c = (a < b);
-        return false;
+        if(a > b){
+        return true;
+        }
+         else{
+         return false;
+            }
     }
     public boolean greaterThan3(int a, int b){
-        boolean c = (a == b);
-        return false;
-    }
-    public boolean lessThanTest1(){
-        int a = 1;
-        int b = 2;
-        boolean c = (a < b);
+        if(a > b){
         return true;
+        }
+        else {
+            return false;
     }
+}
+    public boolean lessThanTest1(int a, int b){
+        if(a < b){
+            return true;
+            }
+            else {
+                return false;
+            }
+        } 
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than b, false otherwise.
      */
     public boolean lessThan(int a, int b){
-        return false;
-    }
+        if(a < b){
+            return true;
+            }
+            else {
+                return false;
+            }
+        } 
+    
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is greater than or equal to b, false otherwise.
      */
     public boolean greaterThanOrEqualTo(int a, int b){
-        return false;
-    }
+        if(a >= b){
+            return true;
+            }
+            else {
+                return false;
+            }
+        } 
     /**
      * @param a the first number to be compared.
      * @param b the second number to be compared.
      * @return true if a is less than or equal to b, false otherwise.
      */
     public boolean lessThanOrEqualTo(int a, int b){
-        return false;
-    }
+        if(a <= b){
+            return true;
+            }
+            else {
+                return false;
+            }
+        } 
 
     /**
      * @param a the first number to be compared.
@@ -84,6 +121,10 @@ public class Comparators {
      * @return true if a is not equal to b, false otherwise.
      */
     public boolean notEqualTo(int a, int b){
-        return false;
-    }
+        if(a!=b)
+        return true;
+    {
+    return false;
+}
+}
 }
