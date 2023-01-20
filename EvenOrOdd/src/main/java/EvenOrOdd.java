@@ -10,15 +10,14 @@ public class EvenOrOdd {
      * That operator, could be used to tell if a number is even or odd - a number that has a remainder of 0 when
      * divided by 2 is naturally even.
      *
-     * @param n a number.
-     * @return a String "Even" if n is even, and "Odd" of in is odd. The test cases are case-sensitive.
+     * @param n a number * @return a String "Even" if n is even, and "Odd" of in is odd. The test cases are case-sensitive.
      */
     public String decide(int n){
-        if()
-
-{
+        if(n % 2 == 0){
+        return "odd";
+    }
+    return "even";
 }
-{
-    
-
+}
+ 
 
