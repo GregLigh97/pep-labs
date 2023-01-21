@@ -18,7 +18,7 @@ public class MathClass {
      * Enjoy: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
      * @return 
      */
-    public double math( double a , double b){
+    public double mathPow( double a , double b){
     return (Math.pow(a,b));
     
     }
