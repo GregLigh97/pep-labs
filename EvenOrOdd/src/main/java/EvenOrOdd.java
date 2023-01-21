@@ -14,9 +14,9 @@ public class EvenOrOdd {
      */
     public String decide(int n){
         if(n % 2 == 0){
-        return "odd";
+        return "Even";
     }
-    return "even";
+    return "Odd";
 }
 }
  
