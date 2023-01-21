@@ -28,13 +28,13 @@ public class Pyramid {
      */
     public String returnPyramid(int n){
          int i = 0;
+         int j = 0;
          String pyramidString = "";
          for(i=0; i < n; i++){
-            pyramidString=pyramidString+"/n";
-            for(i = 0; i < n ;i++){
+            for(j=0; j<=i; j++){
                 pyramidString=pyramidString+"*";  
             }
-        
+         pyramidString=pyramidString+"\n";
         }
         return pyramidString;
     }
