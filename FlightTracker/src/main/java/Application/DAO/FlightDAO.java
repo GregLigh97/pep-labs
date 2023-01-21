@@ -69,12 +69,12 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "SELECT * FROM flight Where flight_id = ?";
+            String sql = "SELECT * FROM flight Where flight_id = (?);";
             
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setInt(1, id);
-            preparedStatement.setInt(2, id);
+            
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
@@ -112,12 +112,12 @@ public class FlightDAO {
         try {
             //Write SQL logic here. When inserting, you only need to define the departure_city and arrival_city
             //values (two columns total!)
-            String sql = "Insert into flight (departure_city, arrival_city)";
+            String sql = "Insert into flight (departure_city, arrival_city) values (?, ?);" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setString(1, "departure_city");
-            preparedStatement.setString(2, "arrival_city");
+            preparedStatement.setString(1, flight.departure_city);
+            preparedStatement.setString(2, flight.arrival_city);
 
             preparedStatement.executeUpdate();
             ResultSet pkeyResultSet = preparedStatement.getGeneratedKeys();
@@ -188,12 +188,12 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "SELECT * from flight Where departure_city= ?, arrival_city= ?;";
+            String sql = "SELECT * From flight Where departure_city= ? and arrival_city= ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1, sql);
-            preparedStatement.setInt(2, 123);
+            preparedStatement.setString(1, departure_city);
+            preparedStatement.setString(2, arrival_city);
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
