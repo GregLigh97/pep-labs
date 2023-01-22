@@ -10,14 +10,14 @@ public class ContainsDuplicates<T> {
      * @return true if nums contains any duplicate values, false if it does not.
      */
     public boolean containsDuplicate(int[] nums){
-        Set<HashSet> set = new HashSet<>();
-         if(set.contains(nums)){
+        Set<HashSet> set = new HashSet<>();{
+        if(set.contains(nums)){
             return true;
             }
             else {
                 return false;
-            }
-        }
+            } 
+    }       return false;
     }
 }
-
+}
