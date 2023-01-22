@@ -21,13 +21,19 @@ public class ArraysAreEqual {
         for(i = 0; i<a.length;i++);
         {
         if(a.length == b.length){
-        return false;  
-        } else{
-        return true;
-       }
-    }
+        return false;
+        }else{
+        return false;
+        {
+        {
+       return false;
 }
 }
+}
+        }
+
+
+
 
 
   
