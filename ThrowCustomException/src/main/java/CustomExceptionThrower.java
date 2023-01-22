@@ -1,3 +1,4 @@
+import kotlin.jvm.Throws;
 
 public class CustomExceptionThrower {
 
@@ -9,7 +10,7 @@ public class CustomExceptionThrower {
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
     public void throwCustomException()throws CustomException{
-        throw new CustomException();
+        Throws new CustomException();
         
     }
     public void CustomException(String message){
