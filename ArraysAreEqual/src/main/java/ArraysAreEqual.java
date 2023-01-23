@@ -17,19 +17,12 @@ public class ArraysAreEqual {
      * @return true if the values of a are equal to the values of b.
      */
     public boolean equal(int[] a, int[] b){
-        int i = 0;
-        for(i = 0; i>a.length;){
             if(a.length == b.length){
                 return true;
                 }
-                else {
-                    return false;
-                }
-            }
-            return false;
-        }
+                return false;
     }
-
+}
 
 
 
