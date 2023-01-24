@@ -18,5 +18,6 @@
 public class Shiba extends Dog{
 
 //    override sound() here
+ Shiba.override()
 
 }
