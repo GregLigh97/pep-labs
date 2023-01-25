@@ -13,8 +13,8 @@
  *
  * @param <T> a placeholder for any type of object.
  */
-public class GenericExercise<T> {
-    T data;
+public class GenericExercise<T>;
+    return T.data;
 
     /**
      * Set data to 'in'.
