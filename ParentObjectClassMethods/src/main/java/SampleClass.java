@@ -59,11 +59,10 @@ public class SampleClass {
 
     if(a.equals(b));
     return true;
-}else{
+}
     return false;
-
-
-    /
+}
+    
   
 
     //    implement a custom .toString(){} method here.
