@@ -1,4 +1,5 @@
 
+import java.lang.annotation.Target;
 import java.util.List;
 
 public class LargestSum {
@@ -12,8 +13,8 @@ public class LargestSum {
     public int bigSum(List<Integer> nums){
         int sum = 0;
         int i;
-        for(i=0; i < nums.size(); i++)
-         sum += nums[i];
+        for(i=0; i < nums.size();i++)
+        sum += nums.get(i);
         return sum;
     }
 }
