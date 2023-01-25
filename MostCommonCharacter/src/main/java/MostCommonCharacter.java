@@ -1,3 +1,4 @@
+import org.w3c.dom.css.Counter;
 
 public class MostCommonCharacter {
     /**
@@ -7,7 +8,21 @@ public class MostCommonCharacter {
      * @param str A String.
      * @return the most common character within str.
      */
-    public char recurringChar(String str) {
-        return ' ';
+    public int recurringChar(String str) {
+        int i=0;
+        char first = 0;
+        char second = 0;
+        int[] count;
+       for(i=0; i < str.length(); i++);
+        (count[str.length()])++;
+        for(i=0; i < str.length(); i++){
+           if(count[i] > count[i]){
+            second = first;
+            first = i;
+           }
+           else if (count[i] > count[second] && count[i] != count[first])
+           second = i;
     }
+     return first;
+}
 }
