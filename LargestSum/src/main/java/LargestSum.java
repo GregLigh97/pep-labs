@@ -12,13 +12,13 @@ public class LargestSum {
      */
     public int bigSum(List<Integer> nums){
        int max = 0;
-       int secondMax = Integer.MAX_VALUE;
+       int secondMax = 0;
        
        for(int value: nums) {
         if(value > max) {
         secondMax = max;
         max = value;
-    } else if (value > secondMax && value >= max) { 
+    } else if (value > secondMax && value <= max) { 
         secondMax = value;
     }
 }
