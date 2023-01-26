@@ -16,13 +16,12 @@ import java.util.List;
  * readable and maintainable in the long run!
  */
 public class AuthorService {
-    private AuthorDAO authorDAO;
     /**
      * no-args constructor for creating a new AuthorService with a new AuthorDAO.
      * There is no need to change this constructor.
      */
     public AuthorService(){
-        authorDAO = new AuthorDAO();
+        new AuthorDAO();
     }
     /**
      * Constructor for a AuthorService when a AuthorDAO is provided.
@@ -32,7 +31,6 @@ public class AuthorService {
      * @param authorDAO
      */
     public AuthorService(AuthorDAO authorDAO){
-        this.authorDAO = authorDAO;
     }
     /**
      * TODO: Use the AuthorDAO to retrieve all authors.
@@ -40,7 +38,7 @@ public class AuthorService {
      * @return all authors
      */
     public List<Author> getAllAuthors() {
-        return null;
+        return getAllAuthors();
     }
     /**
      * TODO: Use the AuthorDAO to persist an author. The given Author will not have an id provided.
@@ -49,6 +47,6 @@ public class AuthorService {
      * @return The persisted author if the persistence is successful.
      */
     public Author addAuthor(Author author) {
-        return null;
+        return addAuthor(author);
     }
 }
