@@ -36,8 +36,8 @@ public class FlightDAO {
             String sql = "select * from flight where departure_city = ? and arrival city = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
            
-            preparedStatement.setString(1,departure_city);
-            preparedStatement.setString(2,arrival_city);
+            preparedStatement.setString(1,"departure_city");
+            preparedStatement.setString(2,"arrival_city");
            
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
@@ -158,7 +158,7 @@ public class FlightDAO {
             //write PreparedStatement setString and setInt methods here.
             preparedStatement.setString(1,flight.getDeparture_city());
             preparedStatement.setString(2,flight.getArrival_city());
-            preparedStatement.setInt(3,id);
+            preparedStatement.setInt(3,flight.flight_id);
             
             preparedStatement.executeUpdate();
         }catch(SQLException e){
@@ -188,12 +188,12 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "SELECT * From flight Where departure_city= ? and arrival_city= ?;";
+            String sql = "select * from flight Where departure_city= ? and arrival_city= ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1, departure_city);
-            preparedStatement.setString(2, arrival_city);
+            preparedStatement.setString(1, "departure_city");
+            preparedStatement.setInt(2, Integer.valueOf(arrival_city));
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
