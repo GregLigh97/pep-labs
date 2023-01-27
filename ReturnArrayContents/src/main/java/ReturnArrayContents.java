@@ -28,16 +28,13 @@ public class ReturnArrayContents {
      * @return a string representation of all values of nums, with the values separated by spaces.
      */
     public String arrayToString(int[] nums){
-        int i;
-        for(i = 0; i < nums.length;i++){
-         String str =   str += nums[i]+"";
-        }
-        return str;
+    StringBuilder str = new StringBuilder();
+    int i;
+    for(i=0; i < nums.length; i++);
+    return  ;       
+    }
+}
 
-    }
-            
-            
-    }
 
 
 
