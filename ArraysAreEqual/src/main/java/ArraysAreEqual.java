@@ -19,12 +19,16 @@ public class ArraysAreEqual {
     public boolean equal(int[] a, int[] b){
            int i;
             for(i=0; i < a.length;i++){
-            } a[i] = b[i];
+            }a[i] = b[i];{
             return true;
             }
-            return false;             
-            }
+        
+             return false;
+    }
 }
+
+
+
 
 
 
