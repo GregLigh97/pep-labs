@@ -47,6 +47,6 @@ public class AuthorService {
      * @return The persisted author if the persistence is successful.
      */
     public Author addAuthor(Author author) {
-        return addAuthor(author);
+        return author;
     }
 }
