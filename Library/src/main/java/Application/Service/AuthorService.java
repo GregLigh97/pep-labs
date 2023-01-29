@@ -1,6 +1,7 @@
 package Application.Service;
 
 import Application.Model.Author;
+import net.bytebuddy.asm.Advice.This;
 import Application.DAO.AuthorDAO;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class AuthorService {
      * There is no need to change this constructor.
      */
     public AuthorService(){
-        new AuthorDAO();
+     AuthorDAO = new AuthorDAO();
     }
     /**
      * Constructor for a AuthorService when a AuthorDAO is provided.
@@ -31,14 +32,17 @@ public class AuthorService {
      * @param authorDAO
      */
     public AuthorService(AuthorDAO authorDAO){
+     this.authorDAO = AuthorDAO();
     }
+     
+
     /**
      * TODO: Use the AuthorDAO to retrieve all authors.
      *
      * @return all authors
      */
     public List<Author> getAllAuthors() {
-        return authorDAO;
+        return authorDAO.getAllAuthors();
     }
     /**
      * TODO: Use the AuthorDAO to persist an author. The given Author will not have an id provided.
@@ -47,6 +51,6 @@ public class AuthorService {
      * @return The persisted author if the persistence is successful.
      */
     public Author addAuthor(Author author) {
-        return authorDAO;
+        return authorDAO.insertAuthor(author);
     }
 }
