@@ -53,15 +53,20 @@
  */
 public class SampleClass {
     public int a;
-    public boolean b;
+    public boolean b;{
 
     //   implement a custom .equals(SampleClass other){} method here.
-
-    if(a.equals(b));
+    
+    if (a.equals(b));
+    }
+}
     return true;
+   }
 }
     return false;
-}
+
+    
+
     
   
 
