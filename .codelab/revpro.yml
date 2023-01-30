@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 6
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 6
   Start:
     :Week: 1
     :Order: 1
@@ -869,11 +869,23 @@
     :Order: 3
     :Type: challenge
     :count_tests: 3
-    :count_tests_passed: 0
+    :count_tests_passed: 6
     :tests:
       removeTest1: 0
       removeTest2: 0
       removeTest3: 0
+      returnNeitherNorTest1: 1
+      returnNeitherNorTest2: 1
+      returnNeitherNorTest3: 1
+      returnNeitherNorTest4: 0
+      returnExclusiveOrTest1: 1
+      returnExclusiveOrTest2: 0
+      returnExclusiveOrTest3: 0
+      returnExclusiveOrTest4: 1
+      returnNotBothTest1: 1
+      returnNotBothTest2: 0
+      returnNotBothTest3: 0
+      returnNotBothTest4: 0
   IsThereSum:
     :Week: 7
     :Order: 4
