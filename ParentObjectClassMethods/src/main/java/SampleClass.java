@@ -53,17 +53,17 @@
  */
 public class SampleClass {
     public int a;
-    public boolean b;{
+    public boolean b;
 
     //   implement a custom .equals(SampleClass other){} method here.
     
-    if (a.equals(b));
-    }
+    public boolean equals(Object obj) {
+    if(this == obj) return true;
+    if (obj == null || getClass() != obj.getClass()) return false;
+    SampleClass that = (SampleClass) obj;
+    return a == that.a && b == that.b;
 }
-    return true;
-   }
-}
-    return false;
+    
 
     
 
@@ -71,6 +71,7 @@ public class SampleClass {
   
 
     //    implement a custom .toString(){} method here.
- get.class().getName
-    
+   public String toString() {
+    return ""+a+b;
 }
+    }
