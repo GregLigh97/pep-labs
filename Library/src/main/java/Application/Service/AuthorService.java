@@ -17,12 +17,13 @@ import java.util.List;
  * readable and maintainable in the long run!
  */
 public class AuthorService {
+public AuthorDAO authorDAO;
     /**
      * no-args constructor for creating a new AuthorService with a new AuthorDAO.
      * There is no need to change this constructor.
      */
     public AuthorService(){
-     AuthorDAO = new AuthorDAO();
+     authorDAO = new AuthorDAO();
     }
     /**
      * Constructor for a AuthorService when a AuthorDAO is provided.

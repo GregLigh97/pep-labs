@@ -42,10 +42,10 @@
   :count_labs_total: 96
   :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 5
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 0
+  :count_tests_passed: 5
   Start:
     :Week: 1
     :Order: 1
@@ -816,21 +816,33 @@
     :Order: 9
     :Type: project
     :count_tests: 13
-    :count_tests_passed: 0
+    :count_tests_passed: 5
     :tests:
       getAllAuthorsDAOTest: 0
       insertAuthorCheckWithGetAllTest: 0
-      getAllAuthorsServiceTest: 0
-      addAuthorTest: 0
-      getAllBooksTest: 0
-      getBookByIsbnTest: 0
+      getAllAuthorsServiceTest: 1
+      addAuthorTest: 1
+      getAllBooksTest: 1
+      getBookByIsbnTest: 1
       insertBookCheckWithGetAllTest: 0
       insertBookCheckWithGetByIdTest: 0
       getBooksWithBookCountOverZeroTest: 0
       getAllBooksTest1: 0
       addBookVerifyNotNullOnSuccessfulAddTest: 0
       addBookVerifyNullOnUnsuccessfulAdd: 0
-      getAllAvailableBooksTest: 0
+      getAllAvailableBooksTest: 1
+      returnNeitherNorTest1: 1
+      returnNeitherNorTest2: 1
+      returnNeitherNorTest3: 1
+      returnNeitherNorTest4: 0
+      returnExclusiveOrTest1: 1
+      returnExclusiveOrTest2: 0
+      returnExclusiveOrTest3: 0
+      returnExclusiveOrTest4: 1
+      returnNotBothTest1: 1
+      returnNotBothTest2: 0
+      returnNotBothTest3: 0
+      returnNotBothTest4: 0
   AdvancedBooleans:
     :Week: 7
     :Order: 1
