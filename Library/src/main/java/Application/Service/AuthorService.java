@@ -32,7 +32,7 @@ public class AuthorService {
      * @param authorDAO
      */
     public AuthorService(AuthorDAO authorDAO){
-     this.authorDAO = AuthorDAO();
+     this.authorDAO = authorDAO;
     }
      
 
