@@ -11,13 +11,19 @@ public class IsThereSum {
      */
     public boolean check(int[] arr, int target){
         int i = 0;
-        for(i=0; i<arr.length;i++)
-        for(int j = 0; j<arr.length;)
+        for(i=0; i<arr.length;i++){
+        for(int j = 0; j<arr.length;j++){
         if(arr[i] + arr[j] == target){
         return true;
+    }  
+}
     }
-    return false;
+     return false;
+        }
+
 }
-}
+
+
+
 
 
