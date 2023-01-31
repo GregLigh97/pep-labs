@@ -177,6 +177,7 @@ public class LibraryAppTest {
         bookList.add(b3);
         Mockito.when(mockBookDAO.getAllBooks()).thenReturn(bookList);
         List<Book> returnedBooks = bookService.getAllBooks();
+        System.out.println("-----------------------"+returnedBooks);
         if(returnedBooks == null){
             Assert.fail();
         }else{

@@ -40,7 +40,7 @@ public class BookService {
      * @return all books.
      */
     public List<Book> getAllBooks() {
-        return null;
+        return bookDAO.getAllBooks();
     }
     /**
      * TODO: Use the bookDAO to persist a book to the database.
@@ -52,7 +52,7 @@ public class BookService {
      */
     public Book addBook(Book book) {
     int isbn = book.getIsbn();
-    if(bookDAO.getBookByIsbn(isbn) == null){
+    if(bookDAO.getBookByIsbn(isbn) != null){
     return null;
     } else {
     return bookDAO.insertBook(book);

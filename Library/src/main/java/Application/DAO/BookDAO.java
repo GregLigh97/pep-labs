@@ -32,7 +32,7 @@ public class BookDAO {
         List<Book> books = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "Select * From book";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
@@ -57,7 +57,7 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "Select * from Book where isbn = (?)";
+            String sql = "Select * From book WHERE isbn = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
@@ -88,7 +88,7 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "INSERT INTO book (name) Values (?)" ;
+            String sql = "INSERT INTO book(isbn, author_id, title, copies_available) VALUES (?,?,?,?);" ;
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
@@ -96,6 +96,7 @@ public class BookDAO {
              preparedStatement.setInt(2, book.getAuthor_id());
              preparedStatement.setString(3, book.getTitle());
              preparedStatement.setInt(4, book.getCopies_available());
+
              preparedStatement.executeUpdate();
             return book;
         }catch(SQLException e){
@@ -113,11 +114,11 @@ public class BookDAO {
         List<Book> books = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "SELECT * FROM book Where book_count > 0";
+            String sql = "select * from book where copies_available > 0;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setInt method here.
-            preparedStatement.setString(1, sql);
+           
 
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
