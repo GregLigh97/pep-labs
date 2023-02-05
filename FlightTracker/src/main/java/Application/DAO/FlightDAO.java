@@ -36,8 +36,7 @@ public class FlightDAO {
             String sql = "select * from flight";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
            
-            preparedStatement.setString(1,"departure_city");
-            preparedStatement.setString(2,"arrival_city");
+           
            
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
@@ -152,13 +151,13 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "Update flight SET departure_city=?, arrival_city=? Where id= (?)";
+            String sql = "Update flight SET departure_city=?, arrival_city=? Where flight_id= ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1,flight.getDeparture_city());
-            preparedStatement.setString(2,flight.getArrival_city());
             preparedStatement.setInt(3,id);
+            preparedStatement.setString(2,flight.arrival_city);
+            preparedStatement.setString(1,flight.departure_city);
             
             preparedStatement.executeUpdate();
         }catch(SQLException e){
