@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,18 +10,27 @@ public class ContainsDuplicates<T> {
      * @return true if nums contains any duplicate values, false if it does not.
      */
     public boolean containsDuplicate(int[] nums){
-        Set<Integer> set = new HashSet<Integer>();
-        for(int i=0; i < nums.length; i++){
-         for(int j=0; j < nums.length; j++){
-        if(set.contains(nums[i])){
-            return false;
-             }
-            }
-        }
-            return true;
-        }
-    }
-            return false;
-        }
-    }
+       // Create an empty Set
+       Set<Integer> set = new HashSet<>();
+ 
+       // Iterate through the array
+       for (int i = 0; i < nums.length; i++) {
+
+           // Add each element into the set
+           set.add(nums[i]);
+         }
+
+
+       int arrayLength = nums.length;
+       int setLength = set.size();
+
+       if (arrayLength == setLength) {
+          return false;
+         } 
+         return true;
+
+
+   }
+}
+    
 
