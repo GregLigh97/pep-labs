@@ -21,8 +21,7 @@ public class GenericExercise<T>{
      * @param in an Object that will be of type T at runtime.
      */
     public void loadGenericItem(T in){
-
-        T = in;
+     GenericClass<in> obj = new GenericClass<>();
 
     }
     /**
@@ -30,6 +29,6 @@ public class GenericExercise<T>{
      */
     public T returnGenericItem(){
         
-        return this.data;
+        return T;
     }
 }
