@@ -18,11 +18,11 @@ public class MostCommonCharacter {
 
         for(int i =0; i < cArray.length; i++)
         {
-            int characterASCII = (int)cArray[i];
+            int character = (int)cArray[i];
             characterCount = 0;
-            for(int x = 0; x < cArray.length; x++)
+            for(int j = 0; j < cArray.length; j++)
             {
-                if(characterASCII == (int)cArray[x])
+                if(character == (int)cArray[j])
                 {
                     characterCount ++;
                     if(characterCount > maxCharacter)
