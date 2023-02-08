@@ -1,3 +1,5 @@
+import java.sql.Array;
+import java.util.Arrays;
 
 public class Isogram {
     /**
@@ -13,7 +15,19 @@ public class Isogram {
      * @return true if str is an isogram, false otherwise.
      */
     public boolean isIsogram(String str){
+        str = str.toLowerCase();
+        int len = str.length();
+ 
+        char arr[] = str.toCharArray();
+ 
+        Arrays.sort(arr);
+        for (int i = 0; i < len - 1; i++) {
+            if (arr[i] == arr[i + 1])
+                return false;
+        }
+        return true;
+    }
         
     }
-}
+
     
