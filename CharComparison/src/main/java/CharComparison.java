@@ -14,12 +14,16 @@ public class CharComparison {
      */
     public int compare(char[] a, char[] b){
        int i = 0;
-       int outcome = 0;
-        if(a[i] < b[i]){
-        for(i = 0; i<b.length; i++){
-        } 
-        return  -1;
-        }
-    return outcome ;
+       for(i = 0; i<b.length;);
+       if(a[i] < b[i]){
+       return -1;
+    } 
+     else if (a[i] > b[i]){
+       return 1;
     }
-    }
+    else  if (a[i] == b[i]);
+       return 0;
+}
+}
+
+
