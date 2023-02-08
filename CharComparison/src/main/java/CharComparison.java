@@ -15,13 +15,11 @@ public class CharComparison {
     public int compare(char[] a, char[] b){
        int i = 0;
        int outcome = 0;
-       if(Arrays.equals(a, b)){
-        return outcome;
-        }
+        if(a[i] < b[i]){
         for(i = 0; i<b.length; i++){
-        } else if (a[i] < b[i]){
-        return outcome = -1;
+        } 
+        return  -1;
         }
-    return outcome;
+    return outcome ;
     }
-}
+    }
