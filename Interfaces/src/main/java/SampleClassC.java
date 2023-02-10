@@ -17,7 +17,7 @@
  */
 
 public class SampleClassC implements Comparable<SampleClassC>{
-    int val;
+    int zoo;
     /**
      * TODO: implement compareTo for this class
      *
@@ -26,9 +26,8 @@ public class SampleClassC implements Comparable<SampleClassC>{
      *
      * @param val another object of type SampleClassC, which we are comparing to 'this' object.
      */
-    public int compareTo(val){
-        if(val.compareTo(val))
-       return -1;
+    public int compareTo(SampleClassC val){
+        if(val.compareTo(zoo))
+       return 0;
     }
-}
 }
