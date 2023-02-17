@@ -9,30 +9,18 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public int recurringChar(String str) {
-        
-        int characterCount = 0;
-        int maxCharacter = 0;
-        char maxCharacterChar = '.';
-
-        char[] cArray = str.toCharArray();
-
-        for(int i =0; i < cArray.length; i++)
+        char maxappearchar = ' ';
+        int counter = 0;
+        int [] charcnt = new int[Character.MAX_VALUE + 1];
+        for (int i = 0; i<str.length() ; i++){
+            char ch = str.charAt(i);
+            charcnt[ch]++ ;
+            if (charcnt[ch] > counter)
         {
-            int character = (int)cArray[i];
-            characterCount = 0;
-            for(int j = 0; j < cArray.length; j++)
-            {
-                if(character == (int)cArray[j])
-                {
-                    characterCount ++;
-                    if(characterCount > maxCharacter)
-                    {
-                        maxCharacter = characterCount;
-                        maxCharacterChar = cArray[i];
-                    }
-                }
-            }
+           counter = charcnt[ch];
+           maxappearchar = ch;
         }
-        return maxCharacterChar;
+    }
+        return maxappearchar;
 }
 }
