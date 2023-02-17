@@ -21,14 +21,13 @@ public class WordCountMap {
      */
     public Map<String, Integer> returnWordMap(String words){
         Map<String, Integer> hashMap = new HashMap<>();
-        String[] word = str.split(" ");{
-        for(String word: words){
-
-            Integer integer = hashMap.get(words);
+        String[] word = words.split(" ");{
+        for(String n: word){
+            Integer integer = hashMap.get(n);
             if (integer == null)
-                hashMap.put(words, 1);
+                hashMap.put(n, 1);
             else {
-                hashMap.put(words, integer + 1);
+                hashMap.put(n, integer + 1);
             }
    
     }
