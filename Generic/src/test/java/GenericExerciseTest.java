@@ -11,7 +11,7 @@ public class GenericExerciseTest {
         GenericExercise<String> ge = new GenericExercise<>();
         ge.loadGenericItem("generic");
         String expected = "generic";
-        String actual = ge.returnGenericItem();
+        String actual = (String) ge.returnGenericItem();
         Assert.assertEquals(expected, actual);
     }
     /**
@@ -27,7 +27,7 @@ public class GenericExerciseTest {
         if(ge.returnGenericItem() == null){
             Assert.fail();
         }else{
-            int actual = ge.returnGenericItem();
+            int actual = (int) ge.returnGenericItem();
             Assert.assertEquals(expected, actual);
         }
     }

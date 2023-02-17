@@ -14,9 +14,7 @@
  * @param <T> a placeholder for any type of object.
  */
 public class GenericExercise<T>{
-    public T get() { 
-        return T; 
-    }
+     T data;
 
     /**
      * Set data to 'in'.
@@ -24,14 +22,14 @@ public class GenericExercise<T>{
      */
 
     public void loadGenericItem(T in){
-     GenericClass<in> obj = new GenericClass<>();
-
+     data = in;
+           
     }
     /**
      * @return T data. The type of Data will again be set when the GenericExercise object is created (at runtime).
      */
     public Object returnGenericItem(){
-        return T;        
+        return data;        
         }
         
     }
