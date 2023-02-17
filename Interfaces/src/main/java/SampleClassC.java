@@ -1,3 +1,5 @@
+import javax.print.attribute.standard.MediaSize.Other;
+
 /**
  * Notice that we are IMPLEMENTING the comparable interface, for type of ObjectToBeCompared.
  * This means that we must implement a method compareTo, otherwise the code will not compile. This compareTo method
@@ -17,7 +19,7 @@
  */
 
 public class SampleClassC implements Comparable<SampleClassC>{
-    int zoo;
+    int val;
     /**
      * TODO: implement compareTo for this class
      *
@@ -26,8 +28,12 @@ public class SampleClassC implements Comparable<SampleClassC>{
      *
      * @param val another object of type SampleClassC, which we are comparing to 'this' object.
      */
-    public int compareTo(SampleClassC val){
-        if(val.compareTo(zoo))
-       return 0;
-    }
+    public int compareTo(SampleClassC other){
+        if(this.val < other.val){
+      return -1;
+    }else if(this.val > other.val){
+        return 1;   
+}
+     return 0;
+}
 }
