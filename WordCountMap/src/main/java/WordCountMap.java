@@ -1,6 +1,9 @@
 
+import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.objectweb.asm.tree.analysis.Value;
 public class WordCountMap {
     private String str;
 
@@ -18,16 +21,18 @@ public class WordCountMap {
      */
     public Map<String, Integer> returnWordMap(String words){
         Map<String, Integer> hashMap = new HashMap<>();
-        String[] st = str.split(" ");{
-        for (String word : words) {
+        String[] word = str.split(" ");{
+        for(String word: words){
+
             Integer integer = hashMap.get(words);
             if (integer == null)
-                hashMap.put(word, 1);
+                hashMap.put(words, 1);
             else {
-                hashMap.put(word, integer + 1);
+                hashMap.put(words, integer + 1);
             }
-    return hashMap;
+   
     }
+    return hashMap;
   }
 }
 }
